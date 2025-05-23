@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "907033898007",
+    "project_id": "yummyconnect-f66dd",
+    "storage_bucket": "yummyconnect-f66dd.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:907033898007:android:33020a19ce9852009d4052",
+        "android_client_info": {
+          "package_name": "com.jpdev.yummyconnect"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC7ZW5h2Dc62V2UnnN1eLb001_CISLpk3A"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
