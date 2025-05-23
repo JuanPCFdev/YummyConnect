@@ -7,6 +7,7 @@ plugins {
     id("com.google.dagger.hilt.android")
     kotlin("plugin.serialization") version "2.0.21"
     id("com.google.gms.google-services") //Firebase
+    id("kotlin-parcelize")//Parcelize
 }
 
 android {
@@ -65,13 +66,18 @@ dependencies {
     // Room
     implementation("androidx.room:room-runtime:2.7.1")
     ksp("androidx.room:room-compiler:2.7.1")
+    implementation("androidx.room:room-ktx:2.6.1")
 
     //Serialization
     implementation(libs.kotlinx.serialization.json)
 
     //Firebase
     implementation(platform("com.google.firebase:firebase-bom:33.13.0"))
+    implementation("com.google.firebase:firebase-firestore-ktx")
     implementation("com.google.firebase:firebase-analytics")
+    implementation("com.google.firebase:firebase-auth")
+    //Firebase Coroutines
+    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-play-services:1.7.3")
 
     //Testing
     testImplementation(libs.junit)
