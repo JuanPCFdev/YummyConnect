@@ -1,13 +1,9 @@
 package com.jpdev.yummyconnect.data.remote.dto
 
-import android.os.Parcelable
-import kotlinx.parcelize.Parcelize
-
-@Parcelize
-data class CommentDto(
+data class CommentDTO(
     val id: String = "",
     val postId: String = "",
     val userId: String = "",
     val text: String = "",
-    val timestamp: Long = 0L
-) : Parcelable
+    val timestamp: Long = 0
+)

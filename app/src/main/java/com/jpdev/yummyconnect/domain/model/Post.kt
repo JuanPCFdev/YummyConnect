@@ -4,7 +4,7 @@ data class Post(
     val id: String = "",
     val userId: String,
     val recipeId: String,
-    val image: String,
+    val image: String, //Without implementation yet
     val timestamp: Long = System.currentTimeMillis(),
     val likes: Set<String> = emptySet() // IDs of users who gave likes
 )

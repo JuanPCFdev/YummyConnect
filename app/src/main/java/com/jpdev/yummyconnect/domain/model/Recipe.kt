@@ -7,9 +7,8 @@ data class Recipe(
     val description: String,
     val preparationTime: Int, // In minutes
     val servings: Int,
-    val difficulty: RecipeDifficulty = RecipeDifficulty.MEDIUM,
+    val difficulty: String, //Easy, Medium, Hard
     val isVegetarian: Boolean = false,
-    val tags: Set<String> = emptySet() // Example: #desserts, #vegan
-) {
-    enum class RecipeDifficulty { EASY, MEDIUM, HARD }
-}
+    val ingredients:List<Ingredient>,
+    val steps:List<String>
+)

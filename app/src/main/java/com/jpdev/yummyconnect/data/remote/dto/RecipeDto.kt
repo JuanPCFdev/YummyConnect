@@ -1,17 +1,15 @@
 package com.jpdev.yummyconnect.data.remote.dto
 
-import android.os.Parcelable
-import kotlinx.parcelize.Parcelize
-
-@Parcelize
-data class RecipeDto(
+data class RecipeDTO(
     val id: String = "",
     val userId: String = "",
     val title: String = "",
     val description: String = "",
     val preparationTime: Int = 0,
     val servings: Int = 0,
-    val difficulty: String = "MEDIUM",
+    val difficulty: String = "EASY",
     val isVegetarian: Boolean = false,
-    val tags: List<String> = emptyList()
-) : Parcelable
+    val ingredients: List<IngredientDto> = emptyList(),
+    val steps: List<String> = emptyList(),
+    val createdAt: Long = 0
+)
