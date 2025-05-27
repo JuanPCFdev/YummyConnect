@@ -8,12 +8,15 @@ import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
+import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.shape.CircleShape
 import androidx.compose.foundation.shape.CornerSize
 import androidx.compose.foundation.shape.RoundedCornerShape
+import androidx.compose.material.icons.Icons
 import androidx.compose.material3.Card
+import androidx.compose.material3.CardDefaults
 import androidx.compose.material3.Icon
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.NavigationBar
@@ -107,13 +110,72 @@ fun TopBar() {
 
 @Composable
 fun CardContent() {
-    Card(modifier = Modifier.padding(16.dp)) {
+    Card(
+        modifier = Modifier
+            .padding(16.dp)
+            .fillMaxWidth(),
+        shape = RoundedCornerShape(corner = CornerSize(16.dp)),
+        elevation = CardDefaults.cardElevation(
+            defaultElevation = 4.dp
+        )
+    ) {
         Column {
-            Text("Card content")
             Image(
                 painter = painterResource(R.drawable.ic_profile),
-                contentDescription = "Profile picture"
+                contentDescription = "Card image",
+                contentScale = ContentScale.Crop,
+                modifier = Modifier
+                    .fillMaxWidth()
+                    .height(200.dp)
             )
+            Row(
+                modifier = Modifier.fillMaxWidth(),
+                horizontalArrangement = Arrangement.SpaceBetween,
+                verticalAlignment = Alignment.CenterVertically
+            ) {
+                Text(
+                    "Card text recipe title",
+                    style = MaterialTheme.typography.titleMedium,
+                    modifier = Modifier.padding(16.dp),
+                    fontWeight = FontWeight.Bold,
+                    fontSize = 20.sp
+                )
+                Row(modifier = Modifier.padding(16.dp)) {
+                    Icon(
+                        painter = painterResource(R.drawable.ic_time),
+                        contentDescription = "Time icon",
+                    )
+                    Text("25min")
+                }
+            }
+            Text(
+                "Card Post Description text Card Post Description text Card Post Description text",
+                modifier = Modifier.padding(16.dp)
+            )
+            Row(
+                modifier = Modifier.padding(16.dp),
+                verticalAlignment = Alignment.CenterVertically
+            ) {
+                Image(
+                    painter = painterResource(R.drawable.ic_profile),
+                    contentDescription = "Profile picture",
+                    contentScale = ContentScale.Crop,
+                    modifier = Modifier
+                        .size(40.dp)
+                        .border(
+                            width = 2.dp,
+                            color = MaterialTheme.colorScheme.primary,
+                            shape = RoundedCornerShape(corner = CornerSize(100.dp))
+                        )
+                        .clip(shape = CircleShape)
+                )
+                Spacer(modifier = Modifier.size(8.dp))
+                Text(
+                    "Juanikilaneitor 4000",
+                    fontSize = 16.sp,
+                    style = TextStyle(fontWeight = FontWeight.Bold)
+                )
+            }
         }
     }
 }
