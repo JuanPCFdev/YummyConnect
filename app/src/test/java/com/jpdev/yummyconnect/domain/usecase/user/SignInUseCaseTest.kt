@@ -2,7 +2,7 @@ package com.jpdev.yummyconnect.domain.usecase.user
 
 import com.jpdev.yummyconnect.domain.model.User
 import com.jpdev.yummyconnect.domain.repository.AuthRepository
-import com.jpdev.yummyconnect.domain.usecase.SignInUseCase
+import com.jpdev.yummyconnect.domain.usecase.auth.SignInUseCase
 import kotlinx.coroutines.ExperimentalCoroutinesApi
 import kotlinx.coroutines.runBlocking
 import org.junit.Before

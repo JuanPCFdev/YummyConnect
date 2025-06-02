@@ -1,7 +1,7 @@
 package com.jpdev.yummyconnect.domain.usecase.user
 
 import com.jpdev.yummyconnect.domain.repository.AuthRepository
-import com.jpdev.yummyconnect.domain.usecase.SignOutUseCase
+import com.jpdev.yummyconnect.domain.usecase.auth.SignOutUseCase
 import kotlinx.coroutines.runBlocking
 import org.junit.Before
 import org.junit.Test

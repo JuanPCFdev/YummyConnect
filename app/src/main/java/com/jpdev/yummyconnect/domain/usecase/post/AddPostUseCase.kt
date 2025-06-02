@@ -1,4 +1,4 @@
-package com.jpdev.yummyconnect.domain.usecase
+package com.jpdev.yummyconnect.domain.usecase.post
 
 import com.jpdev.yummyconnect.domain.model.Post
 import com.jpdev.yummyconnect.domain.repository.PostRepository

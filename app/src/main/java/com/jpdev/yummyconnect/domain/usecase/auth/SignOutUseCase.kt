@@ -1,4 +1,4 @@
-package com.jpdev.yummyconnect.domain.usecase
+package com.jpdev.yummyconnect.domain.usecase.auth
 
 import com.jpdev.yummyconnect.domain.repository.AuthRepository
 import javax.inject.Inject

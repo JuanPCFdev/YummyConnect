@@ -1,7 +1,7 @@
 package com.jpdev.yummyconnect.domain.usecase.recipe
 
 import com.jpdev.yummyconnect.domain.repository.RecipeRepository
-import com.jpdev.yummyconnect.domain.usecase.DeleteRecipeUseCase
+import com.jpdev.yummyconnect.domain.usecase.recipe.DeleteRecipeUseCase
 import kotlinx.coroutines.ExperimentalCoroutinesApi
 import kotlinx.coroutines.runBlocking
 import org.junit.Before

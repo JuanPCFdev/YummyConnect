@@ -2,7 +2,7 @@ package com.jpdev.yummyconnect.domain.usecase.comment
 
 import com.jpdev.yummyconnect.domain.model.Comment
 import com.jpdev.yummyconnect.domain.repository.CommentRepository
-import com.jpdev.yummyconnect.domain.usecase.AddCommentUseCase
+import com.jpdev.yummyconnect.domain.usecase.comment.AddCommentUseCase
 import kotlinx.coroutines.ExperimentalCoroutinesApi
 import kotlinx.coroutines.runBlocking
 import org.junit.Before

@@ -1,4 +1,4 @@
-package com.jpdev.yummyconnect.domain.usecase
+package com.jpdev.yummyconnect.domain.usecase.recipe
 
 import com.jpdev.yummyconnect.domain.repository.RecipeRepository
 import javax.inject.Inject

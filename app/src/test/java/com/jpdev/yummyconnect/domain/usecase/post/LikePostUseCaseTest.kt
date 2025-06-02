@@ -1,7 +1,7 @@
 package com.jpdev.yummyconnect.domain.usecase.post
 
 import com.jpdev.yummyconnect.domain.repository.PostRepository
-import com.jpdev.yummyconnect.domain.usecase.LikePostUseCase
+import com.jpdev.yummyconnect.domain.usecase.post.LikePostUseCase
 import kotlinx.coroutines.ExperimentalCoroutinesApi
 import kotlinx.coroutines.runBlocking
 import org.junit.Before

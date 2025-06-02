@@ -1,4 +1,4 @@
-package com.jpdev.yummyconnect.domain.usecase
+package com.jpdev.yummyconnect.domain.usecase.comment
 
 import com.jpdev.yummyconnect.domain.repository.CommentRepository
 import javax.inject.Inject

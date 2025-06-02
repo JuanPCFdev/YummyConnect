@@ -11,13 +11,18 @@ import javax.inject.Inject
 class UserRepositoryImpl @Inject constructor(
     private val firestoreService: FirestoreService,
 ): UserRepository {
+    //Create -- Update
     override suspend fun createOrUpdateUser(user: User) {
         val dto = user.toDto()
         firestoreService.createOrUpdateUser(dto)
     }
-
+    //Read
     override suspend fun getUserById(id: String): User? {
         val dto: UserDto? = firestoreService.getUserById(id)
         return dto?.toDomain()
+    }
+    //Delete
+    override suspend fun deleteUser(id: String) {
+        firestoreService.deleteUser(id)
     }
 }

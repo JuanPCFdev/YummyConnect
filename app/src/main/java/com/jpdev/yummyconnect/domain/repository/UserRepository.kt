@@ -8,4 +8,5 @@ interface UserRepository {
     //Read
     suspend fun getUserById(id: String): User?
     //Delete TODO
+    suspend fun deleteUser(id: String)
 }
